@@ -1,0 +1,38 @@
+titles: 
+    emp_no [integer] (pk)
+    title [varchar(50)]
+    from_date [date]
+    to_date [date]
+
+departments
+    dept_no [char(4)]
+    dept_name [varchar(40)]
+
+
+dept_emp: 
+    emp_no [integer] (pk)
+    dept_no [char(4)] (pk)
+    from_date [date]
+    to_date [date]
+
+dept_manager: 
+    dept_no [char(4)] (pk)
+    emp_no [integer] (pk)
+    from_date [date]
+    to_date [date]
+
+
+employees:
+    emp_no [integer] (pk)
+    birth_date [date]
+    first_name [varchar(14)]
+    last_name [varchar(16)]
+    gender [gender]
+    hire_date [date]
+
+
+salaries:
+    emp_no [integer] (pk)
+    salary [integer]
+    from_date [date]
+    to_date [date]
