@@ -34,5 +34,7 @@ public class Employee {
 
     @Column(name = "hire_date")
     private LocalDate hireDate;
+
+    private String password;
     
 }

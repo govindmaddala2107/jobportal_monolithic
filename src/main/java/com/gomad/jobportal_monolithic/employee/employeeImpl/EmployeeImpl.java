@@ -47,6 +47,7 @@ public class EmployeeImpl implements EmployeeService {
             dbEmp.setFirstName(employee.getFirstName());
             dbEmp.setLastName(employee.getLastName());
             dbEmp.setHireDate(employee.getHireDate());
+            dbEmp.setPassword(employee.getPassword());
             return employeeRepo.save(dbEmp);
         }).orElse(null);
     }
